@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "e1": "live-server --entry-file=e1.html"
+    "e1": "live-server --ignore=.git --entry-file=e1.html"
   },
   "keywords": [],
   "author": "",
