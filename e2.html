@@ -25,17 +25,17 @@
             )
         }
 
-        SayHello.propTypes ={
-            firstName(props, propName, componentName){
+        const PropTypes ={
+            string (props, propName, componentName){
                 if(typeof props[propName] !== 'string'){
                     return  new Error( `you should pass ${propName}`)
                 }
-            },
-            lastName(props, propName, componentName){
-                if(typeof props[propName] !== 'string'){
-                    throw  new Error( `you should pass ${propName}`)
-                }
             }
+        }
+
+        SayHello.propTypes ={
+            firstName: PropTypes.string,
+            lastName: PropTypes.string
         }
 
         const element = <SayHello firstName="first" />
