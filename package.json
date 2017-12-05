@@ -1,0 +1,12 @@
+{
+  "name": "kent-c-dods",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "e1": "live-server --entry-file=e1.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
