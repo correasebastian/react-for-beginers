@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/prop-types@15.6.0/prop-types.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
 </head>
 <body>
@@ -25,13 +26,6 @@
             )
         }
 
-        const PropTypes ={
-            string (props, propName, componentName){
-                if(typeof props[propName] !== 'string'){
-                    return  new Error( `you should pass ${propName}`)
-                }
-            }
-        }
 
         SayHello.propTypes ={
             firstName: PropTypes.string,
