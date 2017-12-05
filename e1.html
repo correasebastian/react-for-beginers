@@ -20,8 +20,9 @@
         //  div.textContent='Hello world';
         //  div.className="container";
         // const element = React.createElement('div',{className:'container'},'Hello world react')
-       
-        const element = <div className="container">hello world</div>
+        const content ='hello world';
+        const myClass = "container"
+        const element = <div className={myClass}>{content}</div>
         ReactDOM.render(element, rootEle)
 
         //  rootEle.appendChild(div);
