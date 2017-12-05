@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "e1": "live-server --ignore=.git --entry-file=e1.html"
+    "base": "live-server --ignore=.git",
+    "e1": "npm run base --  --entry-file=e1.html",
+    "e2": "npm run base -- --entry-file=e2.html"
   },
   "keywords": [],
   "author": "",
