@@ -23,14 +23,14 @@
         const content ='hello world';
         const myClass = "container"
 
-        const message =(props)=>(
+        //capitalize the function in order to babel recognize as a function when use it <Message>, because if you use <message> lowecase, it will be use as a string and not a function
+        const Message =(props)=>(
             <div>{props.msg}</div>
         )
         const element = (
             <div  className="container">
-            {React.createElement(message /* it can be a function the first param */, {msg:'hello'})}
-            {React.createElement(message /* it can be a function the first param */, {msg:'bye'})}
-            
+                <Message msg='hello'/>
+                <Message msg='bye'/>
             </div>)
         ReactDOM.render(element, rootEle)
 
