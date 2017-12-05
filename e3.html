@@ -18,10 +18,20 @@
          const rootEle= document.getElementById('root');
         
         function Message({msg}) {
-            return msg ?  <div>{msg}</div> : <div>No message</div>
+            // we cannot use if statements inside the interpolation
+            return (
+                <div>
+                    {
+                        msg 
+                        ? ( <div>{msg}</div>) 
+                        : (<div>No message</div>)
+                    }
+                    
+                </div>
+            ) 
         }
 
-        const element = <Message msg={null} />
+        const element = <Message msg="hi" />
         ReactDOM.render(element, rootEle)
 
      </script>
