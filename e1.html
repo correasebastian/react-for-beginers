@@ -23,11 +23,14 @@
         const content ='hello world';
         const myClass = "container"
 
-        const props ={
-            className: myClass,
-            children: content
-        }
-        const element = <div {...props} className="override-my-class" />
+        const message =(props)=>(
+            <div>{props.msg}</div>
+        )
+        const element = (
+            <div  className="container">
+            {message({msg:'Hello'})}
+            {message({msg:'bye'})}
+            </div>)
         ReactDOM.render(element, rootEle)
 
         //  rootEle.appendChild(div);
