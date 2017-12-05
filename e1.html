@@ -25,12 +25,12 @@
 
         //capitalize the function in order to babel recognize as a function when use it <Message>, because if you use <message> lowecase, it will be use as a string and not a function
         const Message =(props)=>(
-            <div>{props.msg}</div>
+            <div>{props.children}</div>
         )
         const element = (
             <div  className="container">
-                <Message msg='hello'/>
-                <Message msg='bye'/>
+                <Message>hello</Message>
+                <Message>bye</Message>
             </div>)
         ReactDOM.render(element, rootEle)
 
