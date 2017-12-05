@@ -15,10 +15,13 @@
      </div>
      <script>
          const rootEle= document.getElementById('root');
-         const div= document.createElement('div');
-         div.textContent='Hello world';
-         div.className="container";
-         rootEle.appendChild(div);
+        //  const div= document.createElement('div');
+        //  div.textContent='Hello world';
+        //  div.className="container";
+        const element = React.createElement('div',{className:'container'},'Hello world react')
+        ReactDOM.render(element, rootEle)
+
+        //  rootEle.appendChild(div);
      </script>
 </body>
 </html>
