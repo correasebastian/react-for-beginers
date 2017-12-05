@@ -7,7 +7,8 @@
     "base": "live-server --ignore=.git",
     "e1": "npm run base --  --entry-file=e1.html",
     "e2": "npm run base -- --entry-file=e2.html",
-    "e3": "npm run base -- --entry-file=e3.html"
+    "e3": "npm run base -- --entry-file=e3.html",
+    "e4": "npm run base -- --entry-file=e4.html"
   },
   "keywords": [],
   "author": "",
