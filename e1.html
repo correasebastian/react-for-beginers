@@ -28,8 +28,9 @@
         )
         const element = (
             <div  className="container">
-            {message({msg:'Hello'})}
-            {message({msg:'bye'})}
+            {React.createElement(message /* it can be a function the first param */, {msg:'hello'})}
+            {React.createElement(message /* it can be a function the first param */, {msg:'bye'})}
+            
             </div>)
         ReactDOM.render(element, rootEle)
 
