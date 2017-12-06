@@ -33,7 +33,9 @@
                         <button onClick={increment}>BTB</button>
                     </p>
                     <p> You typed: {state.username} </p>
-                    <p> <input type="text"/></p>
+                    <p> 
+                        <input onInput={e =>setState({username: e.target.value})} type="text"/>
+                    </p>
                 </div>
             )
         }
