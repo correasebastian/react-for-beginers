@@ -25,6 +25,13 @@
             setState({eventCount: state.eventCount +1 })
         }
 
+        function updateUsername(reactEvent) {
+            console.log(reactEvent);
+            console.log('*****************************');
+            console.log(reactEvent.nativeEvent);
+            setState({username: reactEvent.target.value})
+        }
+
         function App(){
             return (
                 <div>
@@ -34,7 +41,7 @@
                     </p>
                     <p> You typed: {state.username} </p>
                     <p> 
-                        <input onInput={e =>setState({username: e.target.value})} type="text"/>
+                        <input onInput={updateUsername} type="text"/>
                     </p>
                 </div>
             )
